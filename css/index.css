@@ -1,0 +1,91 @@
+body{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    min-height: 100vh;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    background-color:hsl(0, 0%, 95%);
+}
+.cards{
+    font-family: 'Lexend Deca', sans-serif;
+    flex: 0 0 190px;
+    height: 320px;
+    padding: 30px;
+    
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+.btn{
+    border: 0;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 60%; 
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    color: hsl(0, 0%, 95%);
+}
+.c1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius:   10px 0 0 10px;  
+}
+.c2{
+    background-color: hsl(184, 100%, 22%);
+}
+.c3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius:   0 10px 10px 0;
+}
+.t1{
+    color:hsl(31, 77%, 52%);
+}
+.t2{
+    color: hsl(184, 100%, 22%);
+}
+.t3{
+    color:hsl(179, 100%, 13%);
+}
+.nav {
+    padding: 4px;
+    margin-left: 10px;
+    background-color: cadetblue;
+    width: fit-content;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav a:hover{
+    border-bottom: 2px solid #444;
+}
+
+/*media Queries*/
+@media (max-width:760px ) {
+    .flex-container{
+        background-color: #fff;
+    }  
+  
+  }
+  
+  @media (max-width:375px ) {
+    .flex{
+        display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    }
+    .flex-container{
+        background-color: #fff;
+    }
+    
+   
+  }
